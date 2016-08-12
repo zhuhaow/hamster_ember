@@ -1,0 +1,14 @@
+.ui.container
+  .ui.right.floated.compact.menu
+    a.active.grey.item{action "cancel"} Cancel
+    a.active.green.item{action "crawl"} Crawl Now!
+  .ui.right.floated.compact.menu
+    a.item{action "selectAll"} Select All
+    a.item{action "deselectAll"} Deselect All
+  .ui.hidden.clearing.divider
+  .ui.fluid.input
+    input type="text" value=remotePath
+  .ui.hidden.divider
+  .ui.four.doubling.cards
+    each images as |image|
+      image-selector-component image=image

@@ -1,0 +1,6 @@
+.ui.card
+  a.image{action "toggleSelection"}
+    if image.isSelected
+      .ui.red.right.corner.label
+        i.checkmark.icon
+    img src=image.src

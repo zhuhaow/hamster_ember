@@ -1,0 +1,4 @@
+.ui.container
+  div class="ui fluid action input {{unless validated 'error'}}"
+    = input type="text" placeholder="Enter address here" value=value
+    button.ui.button{action "submit"} Crawl It!

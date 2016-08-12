@@ -1,0 +1,6 @@
+if error
+  .ui.negative.message
+    p = error
+address-input onSubmit=(action 'onSubmit')
+.ui.hidden.divider
+image-selector images=images config=config onCrawl=(action "onCrawl") onCancel=(action "onCancel")
